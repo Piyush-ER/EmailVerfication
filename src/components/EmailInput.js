@@ -38,7 +38,7 @@ function EmailInput() {
     const newResults = [];
 
     for (let i = 0; i < emails.length; i++) {
-      const response = await fetch(`http://apilayer.net/api/check?access_key=${apikey}&email=${emails[i]}`);
+      const response = await fetch(`https://apilayer.net/api/check?access_key=${apikey}&email=${emails[i]}`);
       const data = await response.json();
       console.log(data)
 
